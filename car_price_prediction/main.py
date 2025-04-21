@@ -16,11 +16,11 @@ print(df.describe())
 print(df.isnull().sum())
 
 # Explotory Data Analysis
-# sns.pairplot(df)
-# plt.show()
+sns.pairplot(df)
+plt.show()
 
-# sns.heatmap(df.corr(), annot=True)
-# plt.show()
+sns.heatmap(df.corr(), annot=True)
+plt.show()
 
 df.dropna(inplace=True)
 df['brand'] = df['Car_Name'].apply(lambda x: x.split(' ')[0])
@@ -72,15 +72,15 @@ print("Random Forest RMSE:", np.sqrt(mean_squared_error(y_test, rf_preds)))
 print("Random Forest R2 Score:", r2_score(y_test, rf_preds))
 
 #feature importance visualisation
-# importances = rf_model.feature_importances_
-# features = X.columns
+importances = rf_model.feature_importances_
+features = X.columns
 
-# # Plot feature importance
-# plt.figure(figsize=(10, 6))
-# sns.barplot(x=importances, y=features)
-# plt.title("Feature Importance from Random Forest")
-# plt.tight_layout()
-# plt.show()
+# Plot feature importance
+plt.figure(figsize=(10, 6))
+sns.barplot(x=importances, y=features)
+plt.title("Feature Importance from Random Forest")
+plt.tight_layout()
+plt.show()
 
 # Scatter plot: Actual vs Predicted values
 plt.figure(figsize=(8, 6))
