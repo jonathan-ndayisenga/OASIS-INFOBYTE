@@ -38,10 +38,11 @@ Optional: Streamlit (for deploying ML apps)
 
  Projects Completed
 
-Project Title	Description	Link
+Project Title	Description	
 1. Student Performance Analysis	Analyzed student scores based on study habits and demographics	View Project
 2. Sales Prediction using Linear Regression	Built a regression model to forecast sales trends	View Project
 3. Iris Species Classification	Applied classification algorithms to classify flower species	View Project
+4. EMAIL SPAM DETECTION WITH MACHINE LEARNING 
 
  Internship Benefits
 Hands-on Experience with real-world datasets
