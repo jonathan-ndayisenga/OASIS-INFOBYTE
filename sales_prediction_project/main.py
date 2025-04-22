@@ -21,19 +21,19 @@ print(df.head())
 
 
 
-# # Visualize correlations 
-# sns.heatmap(date.corr(), annot=True)
-# plt.title("Feature Correlation Heatmap")
-# plt.show()
+# Visualize correlations 
+sns.heatmap(date.corr(), annot=True)
+plt.title("Feature Correlation Heatmap")
+plt.show()
 
-# # Exploratory Data Analysis (EDA)
-# sns.pairplot(df, diag_kind='kde')
-# plt.show()
+# Exploratory Data Analysis (EDA)
+sns.pairplot(df, diag_kind='kde')
+plt.show()
 
-# corr = df.corr()
-# sns.heatmap(corr, annot=True, cmap='coolwarm')
-# plt.title("Feature Correlation")
-# plt.show()
+corr = df.corr()
+sns.heatmap(corr, annot=True, cmap='coolwarm')
+plt.title("Feature Correlation")
+plt.show()
 
 #Feature Selection & Splitting
 X = df[['TV', 'Radio', 'Newspaper']]
