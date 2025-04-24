@@ -10,7 +10,7 @@ import joblib
 
 
 # Load dataset
-df = pd.read_csv("iris.csv")
+df = pd.read_csv(r"/workspaces/OASIS-INFOBYTE/iris_classifier_project/Iris.csv")
 
 # Explore the data
 print(df.head())
@@ -57,6 +57,6 @@ y_pred = model.predict(X_test)
 
 joblib.dump(model, 'iris_model_fixed.pkl') # Save for Streamlit
 print(type(model))  
-model = joblib.load('iris_model.pkl')
+model = joblib.load('iris_model_fixed.pkl')
 print("Model features:", model.feature_names_in_)  # If available
 
